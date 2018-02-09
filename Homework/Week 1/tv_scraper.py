@@ -12,6 +12,10 @@ from requests.exceptions import RequestException
 from contextlib import closing
 from bs4 import BeautifulSoup
 
+# for BeautifulSoup documentation see: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+# for re documentation see: https://docs.python.org/2/library/re.html
+
+
 TARGET_URL = "http://www.imdb.com/search/title?num_votes=5000,&sort=user_rating,desc&start=1&title_type=tv_series"
 BACKUP_HTML = 'tvseries.html'
 OUTPUT_CSV = 'tvseries.csv'
@@ -66,7 +70,7 @@ def extract_tvseries(dom):
 
 def save_csv(outfile, tvseries):
     """
-    Output a CSV file containing highest rated TV-series.
+    Outputs a CSV file containing highest rated TV-series.
     """
     writer = csv.writer(outfile)
     
