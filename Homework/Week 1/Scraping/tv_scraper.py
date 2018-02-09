@@ -35,21 +35,21 @@ def extract_tvseries(dom):
     serie_list = []
 
     # select html code with information of the series
-    series = dom.find_all(class_='lister-item-content')
+    series = dom.find_all(class_ = 'lister-item-content')
     
     # cycle through series to extract info
     for serie in series:
         # extract title of serie
-        title = serie.find(class_='lister-item-header').a.string
+        title = serie.find(class_ = 'lister-item-header').a.string
 
         # extract rating of series
-        rating = serie.find(class_='inline-block ratings-imdb-rating')["data-value"]
+        rating = serie.find(class_ = 'inline-block ratings-imdb-rating')["data-value"]
 
         # extract genre of serie
-        genre = serie.find(class_='genre').string.strip()
+        genre = serie.find(class_ = 'genre').string.strip()
 
         # extract starring actors of serie
-        actors_page = serie.find_all(href=re.compile("/name/"))
+        actors_page = serie.find_all(href = re.compile("/name/"))
 
         # collect all actors as a string and comma seperated
         actors = []
@@ -60,7 +60,7 @@ def extract_tvseries(dom):
         all_actors = ", ".join(actors)
 
         # look for runtime
-        runtime = serie.find(class_='runtime').string.strip(' min')
+        runtime = serie.find(class_ = 'runtime').string.strip(' min')
 
         # collect individual serie information to overall list
         serie_list.append((title, rating, genre, all_actors, runtime))
