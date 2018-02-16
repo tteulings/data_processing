@@ -1,6 +1,6 @@
 # data_processing
 Aloha!
 
-My page: https://github.com/tteulings/data_processing
+My page: https://tteulings.github.io/data_processing/
 
 Data Processing Homework
