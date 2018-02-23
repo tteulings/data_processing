@@ -1,3 +1,11 @@
+################
+#data_processing week 3
+#Tijs Teulings
+#10782982
+#
+# creates json from csv
+################
+
 import json
 
 # creates json from csv

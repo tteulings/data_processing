@@ -1,3 +1,9 @@
+/*
+data_processing week 2
+Tijs Teulings
+#10782982
+ */
+
 // sets up dimensions of chart
 var margin = {top: 20, right: 30, bottom: 30, left: 100},
     width = 960 - margin.left - margin.right,
