@@ -1,0 +1,42 @@
+h1 {
+    font: 30px "Corbel";
+    font-weight: bold;
+}
+
+h2 {
+    font: 20px "Corbel";
+    font-weight: bold;
+}
+
+.chart rect {
+    fill: red;
+}
+.chart text {
+    fill: #fff1fa;
+    font: 30px "Corbel";
+    text-anchor: end;
+    font-weight: bold;
+}
+
+.axis text {
+    fill: #b40022;
+    font: 16px Corbel;
+    text-anchor: middle;
+    font-weight: bold;
+
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+    shape-rendering: crispEdges;
+}
+
+.d3-tip {
+    color: red;
+    font: 20px Corbel;
+    text-anchor: middle;
+    font-weight: bold;
+}
